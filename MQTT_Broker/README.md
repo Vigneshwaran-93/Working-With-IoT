@@ -10,29 +10,30 @@ This repository contains a simple example of using MQTT for message publishing a
 
 ## Setup
 
-### 1. Install MQTT Broker (Mosquitto)
-
-```bash
-# Update your system
+### Update your system
+``` bash
 sudo apt update && sudo apt upgrade -y
-
-# Install Mosquitto and Mosquitto clients
+```
+### Install Mosquitto and Mosquitto clients
+``` bash
 sudo apt install -y mosquitto mosquitto-clients
-
-# Start Mosquitto service
+```
+### Start Mosquitto service
+``` bash
 sudo systemctl start mosquitto
-
-# Enable Mosquitto to start on boot
+```
+### Enable Mosquitto to start on boot
+```bash
 sudo systemctl enable mosquitto
-
+```
 ### Install dependencies
 ```bash
 pip install -r requirements.txt
-
+```
 
 ### Run Pub and Sub Program
 ```bash
 python mqtt_publisher.py
-
+```
 ```bash
 python mqtt_subscriber.py
