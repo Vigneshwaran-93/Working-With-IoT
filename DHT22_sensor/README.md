@@ -43,3 +43,8 @@ You can install the required libraries via the Arduino Library Manager.
 - It reads temperature and humidity from the DHT22 sensor every 20 seconds.
 - It sends the temperature and humidity data to ThingSpeak via an HTTP GET request.
 - If the Wi-Fi is not connected or there's an error with the sensor, it will print an error message in the Serial Monitor.
+
+## Points of Failure
+- WiFi connection being lost temporally
+- DHT sensor Freezing
+- Sudden drop in request being sent
